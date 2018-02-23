@@ -40,7 +40,7 @@ body{
 }
 .phone-number{
     font-weight: 700;
-    font-size: 1.5625rem;
+    font-size: 1rem;
     color: #000000;
 }
 .email-address{
@@ -55,6 +55,12 @@ body{
 .header__contact{
     float: right;
     text-align: right;
+}
+.header__input{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
 }
 .nav{
     font-size: 1.1875rem;
