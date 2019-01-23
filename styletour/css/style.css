@@ -82,10 +82,74 @@ h3{
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 .carousel.fade .item.active{
 	opacity: 1;
 	position: relative;
+	z-index: 2;
+}
+
+.menu-carousel .carousel-caption{
+	left: 0;
+	top: 170px;
+}
+.menu-carousel .carousel-caption h1{
+	font-weight: 700;
+	font-size: 48px;
+}
+.menu-carousel .carousel-caption h3{
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+.menu-carousel .carousel-caption .btn-red{
+	padding: 20px 30px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 24px;
+}
+.menu-carousel .carousel-caption .btn-red{
+	text-decoration: none;
+}
+.menu-carousel .container{
+	position: relative;
+}
+.menu-carousel .carousel-control{
+	z-index: 10;
+}
+
+.carousel-indicators-wrap{
+	position: absolute;
+	width: 100%;
+	bottom: -25px;
+	text-align: center;
+}
+.carousel-indicators-wrap .carousel-indicators{
+	margin-left: 0;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	display: inline-block;
+	background: #fff;
+	width: auto;
+	border: 1px solid #cfcfcf;
+	border-radius: 3px;
+	padding: 5px 25px;
+}
+.carousel-indicators-wrap .carousel-indicators li{
+	background: #d2d2d2;
+	width: 10px;
+	height: 10px;
+	margin: 0 7px;
+}
+.carousel-indicators-wrap .carousel-indicators li.active{
+	background: #a3a3a3;
+}
+.carousel-indicators-wrap .carousel-indicators li:first-child{
+	margin-left: 0;
+}
+.carousel-indicators-wrap .carousel-indicators li:last-child{
+	margin-right: 0;
 }
 
 /* Large Devices, Wide Screens */
@@ -95,9 +159,20 @@ h3{
 	}
 }
 
+@media only screen and (max-width : 1200px) {
+	.menu-carousel .carousel-caption{
+		left: 20%;
+	}
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+	.menu-carousel .carousel-caption h1{
+		font-size: 40px;
+	}
+	.menu-carousel .carousel-caption h3{
+		font-size: 22px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -112,9 +187,21 @@ h3{
 	.menu-top .navbar-collapse{
 		padding-left: 15px;
 	}
+	.menu-carousel .carousel-caption h1{
+		font-size: 38px;
+	}
+	.menu-carousel .carousel-caption h3{
+		font-size: 20px;
+	}
+	.menu-carousel .carousel-caption .btn-red{
+		padding: 15px 20px;
+		font-size: 16px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.menu-carousel .carousel-caption .btn-red{
+		font-size: 14px;
+	}
 }
