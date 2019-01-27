@@ -189,6 +189,148 @@ h3{
 	color: #fff;
 }
 
+.search{
+	color: #fff;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 50px;
+	position: absolute;
+	right: 25px;
+	z-index: 30;
+	display: none;
+}
+
+/*========================content=========================*/
+.main-slogan{
+	background: #fff;
+	text-align: center;
+	padding: 50px 0;
+	border-top: 1px solid #cfcfcf;
+	border-bottom: 3px solid #dadada;
+}
+.main-slogan h1{
+	font-size: 30px;
+	margin: 0;
+}
+
+.sidebar{
+	padding: 50px 0 70px;
+	border-right: 3px solid #dadada;
+}
+.widget{
+	border-bottom: 3px solid #dadada;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.widget h3,
+.content h3{
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.widget ul{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.widget ul li a{
+	color: #000;
+	font-size: 16px;
+	line-height: 30px;
+	display: block;
+}
+.widget ul li.more a{
+	color: #358acd;
+}
+.content{
+	padding: 50px 0 70px;
+}
+
+.sidebar .carousel{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.sidebar .sidebar-carousel-caption{
+	background: #fff;
+	border-bottom: 1px solid #e1e1e1;
+}
+.sidebar .sidebar-carousel-caption div{
+	padding: 20px;
+}
+.sidebar .sidebar-carousel-caption h4{
+	margin-top: 0;
+	font-weight: 700;
+	font-size: 14px;
+}
+.sidebar .sidebar-carousel-caption p{
+	margin-bottom: 0;
+	font-size: 12px;
+	color: #5b5b5b;	
+}
+.sidebar .carousel-indicators{
+	background: #fff none repeat scroll 0 0;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: auto;
+	margin-left: 0;
+	padding: 10px 0;
+}
+.sidebar .carousel-indicators li{
+	background: #9a9a9a;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+}
+.sidebar .carousel-indicators li.active{
+	background: #5b5b5b;
+}
+.sidebar .banner{
+	background: #fff;
+	margin-bottom: 40px;
+}
+.sidebar .banner img{
+	margin-bottom: 35px;
+}
+.sidebar .banner h3,
+.sidebar .banner h2{
+	text-transform: uppercase;
+	margin: 0;
+}
+.sidebar .banner h3{
+	font-size: 18px;
+}
+.sidebar .banner h2{
+	font-size: 28px;
+	font-weight: bold;
+}
+.sidebar .banner a.btn-red{
+	padding: 5px 30px;
+	margin: 30px 0;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 3px;
+	transition: all .5s;
+}
+.sidebar .banner a.btn-red:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.sidebar .about{
+	padding-right: 35px;
+}
+.sidebar .about h3{
+	margin: 0 0 25px;
+}
+.sidebar .about p{
+	color: #585858;
+	margin-bottom: 30px;
+}
+.sidebar .about span{
+	color: #0a94b2;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.menu-top .navbar-nav,
@@ -199,7 +341,20 @@ h3{
 		left: 20%;
 	}
 	.main-menu .navbar-form{
-		margin-left: 125px;
+		/*margin-left: 125px;*/
+		background: rgba(0, 0, 0, 0.5);
+		margin: 0;
+		padding: 15px;
+		position: absolute;
+		right: 15px;
+		display: none;
+	}
+	.search{
+		display: block;
+	}
+	.sidebar .carousel,
+	.sidebar .banner{
+		margin-right: 10px;
 	}
 }
 
@@ -213,6 +368,15 @@ h3{
 	}
 	.main-menu .navbar-inverse .navbar-nav > li > a{
 		font-size: 14px;
+	}
+	.sidebar{
+		padding-bottom: 0;
+		padding-top: 0;
+		border-right: none;
+	}
+	.sidebar .carousel,
+	.sidebar .banner{
+		margin-right: 0;
 	}
 }
 
@@ -256,6 +420,25 @@ h3{
 		position: relative;
 		z-index: 20;
 	}
+	.search{
+		display: none;
+	}
+	.main-menu .navbar-form{
+		display: block !important;
+		position: relative;
+		right: 0;
+		background: transparent;
+	}
+}
+
+@media only screen and (max-width : 540px) {
+	.sidebar .col-xs-6{
+		width: 100%;
+	}
+	.sidebar .carousel,
+	.sidebar .banner{
+		display: inline-block;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -265,5 +448,11 @@ h3{
 	}
 	.main-menu .navbar-toggle.collapsed + .navbar-brand img{
 		max-height: 80px;
+	}
+}
+
+@media only screen and (min-width : 1200px) {
+	.main-menu .navbar-form{
+		display: block !important;
 	}
 }
