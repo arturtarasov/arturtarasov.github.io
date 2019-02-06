@@ -5,19 +5,19 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: #fff;
+    background-color: white;
     font-family: 'Ubuntu R';
     font-size: 16px;
-    color: #828282;
+    color: @bck-color;
     min-width: 320px;
 }
 
 a {
     font-family: 'Montserrat Bold';
     font-size: 16px;
-    color: #2cc7c1;
+    color: @link;
     &:hover {
-        color: 2cc7c1;
+        color: @link;
     }
 }
 img {
@@ -44,11 +44,11 @@ h2 {
     h1 {
         font-family: 'Montserrat Bold';
         font-size: 31px;
-        color: #fff;
+        color: white;
         text-transform: uppercase;
     }
     p {
-        color: #fff;
+        color: white;
         font-size: 20px;
     }
     .section-btn {
@@ -64,15 +64,15 @@ h2 {
             transition: background-color 0.5s;
         }
         .btn-primary   {
-            background-color:#7ea4e8;
+            background-color: @btn-primary-color;
             &:hover {
-                background-color: #6787c2;
+                background-color: @btn-primary-color-hover;
             }
         }
         .btn-default {
-            background-color:#6a7079;
+            background-color: @btn-default-color;
             &:hover {
-                background-color: #474c52;
+                background-color: @btn-default-color-hover;
             }
         }
     }
@@ -93,6 +93,64 @@ h2 {
 .section-center {
     max-width: 550px;
     display: inline-block;
+}
+
+//-------------------- speakers -----------------------//
+#speakers {
+    padding: 90px 0;
+    border-bottom: 2px solid #f0f0f1;
+    h2 {
+        color: #828689;
+    } 
+    p, .tab-content ul li {
+        color: #828282;
+        font-family: 'Ubuntu R';
+        font-size: 16px;
+    }
+}
+.large {
+    color: #828689; 
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.section-tabs {
+    border: 3px solid #ececec;
+    border-radius: 2px;
+    .nav-tabs li:not(.active) {
+        background-color: #ececec;
+    }
+    .tab-content {
+        padding: 25px 20px;
+        ul {
+            padding-left: 10px;
+            li {
+                line-height: 30px;
+                i {
+                    font-size: 15px;
+                    color: #2cc7c1;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.section-tabs .nav-tabs.nav-justified li a,
+.section-tabs .nav-tabs.nav-justified li.active a,
+.section-tabs .nav-tabs.nav-justified li.active a:focus,
+.section-tabs .nav-tabs.nav-justified li.active a:hover{
+	border-radius: 0;
+	border: none;
+	font-family: "Ubuntu B";
+	font-size: 18px;
+	outline: 0;
+}
+.section-tabs .nav-tabs li.active a{
+	color: #9097a1;
+}
+.nav-tabs li a{
+	color: #abb1ba;
 }
 
 @media only screen and (max-width: 600px) {

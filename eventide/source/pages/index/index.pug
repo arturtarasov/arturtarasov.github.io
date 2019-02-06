@@ -15,3 +15,73 @@ block main
                             a.btn.btn-primary="registr"
                                 <i class="fa fa-chevron-circle-right"></i>
                             a.btn.btn-default="discover"
+    section#speakers
+        .container
+            .row
+                .col-md-6
+                    h2="main goals of the event"
+                    p.large="Design must be functional, and functionality must be translated into visual aesthetics without any reliance on gimmicks that have to be explained."
+                    p="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem qui nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consecteture adipisci velit, sed quia non numquam eius"
+
+                .col-md-6 
+                    .section-tabs
+                        //- Nav tabs
+                        ul.nav.nav-tabs.nav-justified(role="tablist")
+                            li.active(role="presentation")
+                                a(href="#home" aria-controls="home" role="tab" data-toggle="tab")="LEARNING OBJECTIVE"
+                            li(role="presentation")
+                                a(href="#profile" aria-controls="profile" role="tab" data-toggle="tab")="TARGET AUDIENCE"
+                        //- Tab panes
+                        .tab-content.clearfix
+                            .tab-pane.active#home(role="tabpanel")
+                                p="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odot aut fugit, sed quia consequuntur magni dolores eos."
+                                ul.list-unstyled.pull-left
+                                    <li><i class="fa fa-check-circle"></i>Nemo enim ipsam voluptatem</li>
+                                    <li><i class="fa fa-check-circle"></i>Neque porro quisquam est</li>
+                                    <li><i class="fa fa-check-circle"></i>Quis autem vel eum</li>
+                                    <li><i class="fa fa-check-circle"></i>Lorem ipsum dolor sit amet</li>
+                                img(src=require("../../images/tab_img.png") alt="").pull-right
+                            .tab-pane#profile(role="tabpanel")
+                                p="Design must be functional, and functionality must be translated, aspernatur aut odot aut fugit."
+                                ul.list-unstyled.pull-left
+                                    <li><i class="fa fa-check-circle"></i>Nemo aut odit aut fugit sed quia</li>
+                                    <li><i class="fa fa-check-circle"></i>Cumque quos ratione optio</li>
+                                    <li><i class="fa fa-check-circle"></i>Lorem ipsum dolor sit amet</li>
+                                    <li><i class="fa fa-check-circle"></i>Cumque quos ratione optio</li>
+                .row.text-center.speakers-head
+                    h2="EVENT SPEAKERS"
+                    p.large="Sed ut perspiciatis unde omnis iste natus error"
+                .row.speakers
+                    .col-sm-3
+                        .item
+                            <div>
+                                img(src=require("../../images/jobs.jpg") alt="Edward").img-circle
+                                h3="Edward"
+                            </div>
+                            p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"      
+                    .col-sm-3
+                        .item
+                            <div>
+                                img(src=require("../../images/lucy.jpg") alt="LUCY").img-circle
+                                h3="LUCY"
+                            </div>
+                            p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"
+                    .col-sm-3
+                        .item
+                            <div>
+                                img(src=require("../../images/jobs.jpg") alt="Edward").img-circle
+                                h3="Edward"
+                            </div>
+                            p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"      
+                    .col-sm-3
+                        .item
+                            <div>
+                                img(src=require("../../images/lucy.jpg") alt="LUCY").img-circle
+                                h3="LUCY"
+                            </div>
+                            p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"
+                .row.speakers-footer.text-center
+                    p.large="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+                    .section-btn
+                        a.btn.btn-primary="registr"
+                            <i class="fa fa-chevron-circle-right"></i>
