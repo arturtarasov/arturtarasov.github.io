@@ -23,7 +23,7 @@ block main
                     p.large="Design must be functional, and functionality must be translated into visual aesthetics without any reliance on gimmicks that have to be explained."
                     p="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem qui nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consecteture adipisci velit, sed quia non numquam eius"
 
-                .col-md-6 
+                .col-md-6.row-item-col
                     .section-tabs
                         //- Nav tabs
                         ul.nav.nav-tabs.nav-justified(role="tablist")
@@ -33,7 +33,7 @@ block main
                                 a(href="#profile" aria-controls="profile" role="tab" data-toggle="tab")="TARGET AUDIENCE"
                         //- Tab panes
                         .tab-content.clearfix
-                            .tab-pane.active#home(role="tabpanel")
+                            .tab-pane.active.fade.in#home(role="tabpanel")
                                 p="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odot aut fugit, sed quia consequuntur magni dolores eos."
                                 ul.list-unstyled.pull-left
                                     <li><i class="fa fa-check-circle"></i>Nemo enim ipsam voluptatem</li>
@@ -48,39 +48,47 @@ block main
                                     <li><i class="fa fa-check-circle"></i>Cumque quos ratione optio</li>
                                     <li><i class="fa fa-check-circle"></i>Lorem ipsum dolor sit amet</li>
                                     <li><i class="fa fa-check-circle"></i>Cumque quos ratione optio</li>
-                .row.text-center.speakers-head
-                    h2="EVENT SPEAKERS"
-                    p.large="Sed ut perspiciatis unde omnis iste natus error"
-                .row.speakers
-                    .col-sm-3
-                        .item
-                            <div>
-                                img(src=require("../../images/jobs.jpg") alt="Edward").img-circle
-                                h3="Edward"
-                            </div>
-                            p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"      
-                    .col-sm-3
-                        .item
-                            <div>
-                                img(src=require("../../images/lucy.jpg") alt="LUCY").img-circle
-                                h3="LUCY"
-                            </div>
-                            p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"
-                    .col-sm-3
-                        .item
-                            <div>
-                                img(src=require("../../images/jobs.jpg") alt="Edward").img-circle
-                                h3="Edward"
-                            </div>
-                            p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"      
-                    .col-sm-3
-                        .item
-                            <div>
-                                img(src=require("../../images/lucy.jpg") alt="LUCY").img-circle
-                                h3="LUCY"
-                            </div>
-                            p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"
-                .row.speakers-footer.text-center
+            .row.text-center.speakers-head
+                h2="EVENT SPEAKERS"
+                p.large="Sed ut perspiciatis unde omnis iste natus error"
+            .row.speakers.text-center
+                .col-sm-3
+                    .item
+                        <div>
+                            img(src=require("../../images/jobs.jpg") alt="Edward").img-circle.front
+                            span.back
+                                i.fa.fa-twitter
+                            h3="Edward"
+                        </div>
+                        p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"      
+                .col-sm-3
+                    .item
+                        <div>
+                            img(src=require("../../images/lucy.jpg") alt="LUCY").img-circle.front
+                            span.back
+                                i.fa.fa-twitter
+                            h3="LUCY"
+                        </div>
+                        p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"
+                .col-sm-3
+                    .item
+                        <div>
+                            img(src=require("../../images/jobs.jpg") alt="Edward").img-circle.front
+                            span.back
+                                i.fa.fa-twitter
+                            h3="Edward"
+                        </div>
+                        p="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lau dantium, totam rem"      
+                .col-sm-3
+                    .item
+                        <div>
+                            img(src=require("../../images/lucy.jpg") alt="LUCY").img-circle.front
+                            span.back
+                                i.fa.fa-twitter
+                            h3="LUCY"
+                        </div>
+                        p="Sed ut perspiciatis unde omnis iste natus error vsit voluptatem accusantium doloremque lau dantium, totam rem"
+            .row.speakers-footer.text-center
                     p.large="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
                     .section-btn
                         a.btn.btn-primary="registr"
